@@ -1,0 +1,16 @@
+# Ignore backend logs
+./backend/logs/
+
+# Ignore node_modules (if applicable)
+node_modules/
+
+# Ignore environment variables
+.env
+
+# Ignore IDE-specific files
+.vscode/
+.idea/
+
+# Ignore build artifacts
+dist/
+build/
