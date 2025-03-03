@@ -5,6 +5,7 @@ import User from "../models/users.models.js";
 import apiResponse from "../utils/apiResponse.js";
 import logger from "../utils/logger.js";
 
+
 const loginUser = asyncHandler(async (req, res, next) => {
     try {
         const { email, password } = req.body;
@@ -55,5 +56,9 @@ const loginUser = asyncHandler(async (req, res, next) => {
         return res.status(500).json({ message: 'Server error' });
       }
 })
+const logoutUser = asyncHandler(async (req, res, next) => {
 
-export { loginUser }
+  return res.status(200).json(new apiResponse(200, 'Logout successful',{}));
+})
+
+export { loginUser , logoutUser}

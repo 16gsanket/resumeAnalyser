@@ -1,11 +1,16 @@
-import React, { useState } from "react";
+import React, { use, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import {useDispatch} from 'react-redux'
+import { setUser } from "../Feature/Auth/userSlice";
+
+
 
 function SignIn() {
   const navigate = useNavigate()
 
   const[email , setEmail] = useState('')
   const[password , setPassword] = useState('')
+  const dispatch = useDispatch()
 
  async function handleSubmit(formData) {
   
@@ -33,7 +38,12 @@ function SignIn() {
 
     if(data.statusCode === 200){
       localStorage.setItem('token', data.data.token);
-      localStorage.setItem('user', JSON.stringify(data.data.user)); 
+
+      dispatch(setUser(
+        {email:data.data.user.email , userId:data.data.user.id}
+      )
+      )
+      
         navigate('/home')
     }else{
       alert('Invalid Credentials')
@@ -42,7 +52,7 @@ function SignIn() {
   }
 
   return (
-    <div className="flex w-full max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800 lg:max-w-4xl mt-[80px]  ">
+    <div className="flex w-full max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800 lg:max-w-4xl mt-[130px]  ">
       <div
         className="hidden bg-cover lg:block lg:w-1/2  "
         style={{

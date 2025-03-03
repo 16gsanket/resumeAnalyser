@@ -7,6 +7,7 @@ import authRoute from './routes/authRoute.route.js';
 
 import passportJWTConfig from './middlewares/passport-jwt.js';
 import passport from 'passport';
+import resumeRoute from './routes/ResumeRoutes/resume.routes.js';
 
 
 const app = express();
@@ -34,6 +35,7 @@ passportJWTConfig(passport)
 
 app.use('/api/v1/health', healthCheckRoute)
 app.use('/api/v1/auth',authRoute)
+app.use('/api/v1/resume',resumeRoute)
 
 
 
