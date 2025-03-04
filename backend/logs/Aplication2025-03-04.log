@@ -168,3 +168,14 @@
 {"level":"info","message":"Text extraction successful","timestamp":"2025-03-04T14:53:35.848Z"}
 {"level":"info","message":"File uploaded to S3: https://resume-bucket-16gsanket.s3.ap-south-1.amazonaws.com/uploads/tcs cv.pdf","timestamp":"2025-03-04T14:55:59.756Z"}
 {"level":"info","message":"Text extraction successful","timestamp":"2025-03-04T14:56:03.629Z"}
+{"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-04T15:12:54.489Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-03-04T15:12:54.787Z"}
+{"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-04T15:13:14.933Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-03-04T15:13:15.206Z"}
+{"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-04T15:13:21.970Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-03-04T15:13:22.298Z"}
+{"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-04T15:13:24.559Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-03-04T15:13:25.202Z"}
+{"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-04T15:13:26.864Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-03-04T15:13:27.160Z"}
+{"level":"info","message":"Login successful","timestamp":"2025-03-04T15:22:42.157Z"}

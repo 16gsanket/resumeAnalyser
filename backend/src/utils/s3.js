@@ -2,6 +2,7 @@ import { S3Client, PutObjectCommand } from "@aws-sdk/client-s3";
 import { TextractClient, AnalyzeDocumentCommand } from "@aws-sdk/client-textract";
 import dotenv from "dotenv";
 import fs from "fs";
+import logger from "./logger.js";
 
 dotenv.config();
 
@@ -36,10 +37,12 @@ export const uploadFileToS3 = async (filePath, fileName) => {
 
     await s3.send(new PutObjectCommand(params));
 
-    console.log("✅ File uploaded successfully:", fileName);
+    // console.log("File uploaded successfully:", fileName);
+    logger.info(`File uploaded successfully: ${fileName}`);
     return `https://${process.env.AWS_BUCKET_NAME}.s3.${process.env.AWS_REGION}.amazonaws.com/uploads/${fileName}`; // Return full S3 URL
   } catch (error) {
-    console.error("❌ Error uploading to S3:", error);
+    // console.error("Error uploading to S3:", error);
+    logger.error(`Error uploading to S3: ${error}`);
     throw new Error("S3 Upload Failed");
   }
 };
@@ -61,7 +64,7 @@ export const extractTextFromResume = async (s3URL) => {
     const response = await textract.send(command);
 
     if (!response || !response.Blocks) {
-      console.log("❌ No text detected");
+      console.log("No text detected");
       return "No text detected";
     }
 
@@ -70,10 +73,10 @@ export const extractTextFromResume = async (s3URL) => {
       .map((block) => block.Text)
       .join(" ");
 
-    console.log("✅ Extracted Text:", extractedText);
+    console.log("Extracted Text:", extractedText);
     return extractedText || "No text extracted";
   } catch (error) {
-    console.error("❌ Error extracting text from Textract:", error);
+    console.error("Error extracting text from Textract:", error);
     return "Text extraction failed";
   }
 };
