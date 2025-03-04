@@ -16,7 +16,7 @@ const userResume = new mongoose.Schema(
                 ref:"Resume"
             }
         ]
-    }
+    },{timestamps:true}
 )
 
 export default mongoose.model("UserResume",userResume)

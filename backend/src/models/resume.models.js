@@ -1,4 +1,3 @@
-import e from "express";
 import mongoose from "mongoose";
 
 const Resume = new mongoose.Schema(
@@ -7,8 +6,9 @@ const Resume = new mongoose.Schema(
             type:String
         },
         fileType:{
-            enum:['pdf','doc','docx'],
+            type:String,
             required:true 
+            
         },
         fileSize :{
             type:Number

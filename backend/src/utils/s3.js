@@ -1,34 +1,37 @@
-import AWS from "aws-sdk";
+import { S3Client, PutObjectCommand } from "@aws-sdk/client-s3";
 import dotenv from "dotenv";
-import fs from "fs"; // File system module to read files
+import fs from "fs";
 
 dotenv.config();
 
-// Configure AWS S3
-const s3 = new AWS.S3({
-  accessKeyId: process.env.AWS_ACCESS_KEY_ID,
-  secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+// Initialize S3 Client
+const s3 = new S3Client({
   region: process.env.AWS_REGION,
+  credentials: {
+    accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+  },
 });
 
+// Upload file to S3
 export const uploadFileToS3 = async (filePath, fileName) => {
   try {
-    const fileContent = fs.readFileSync(filePath); // Read the file from server storage
+    const fileContent = fs.readFileSync(filePath);
 
     const params = {
       Bucket: process.env.AWS_BUCKET_NAME,
-      Key: `uploads/${fileName}`, // Path in S3
-      Body: fileContent, // Actual file content
-      ContentType: "application/pdf", // Change if uploading other file types
+      Key: `uploads/${fileName}`,
+      Body: fileContent,
+      ContentType: "application/pdf", // Adjust as needed
     };
 
-    // Upload the file
-    const data = await s3.upload(params).promise();
-    
-    console.log('data from uploading to aws bucket: ' ,data)
-    console.log("File uploaded successfully:", data.Location);
-    
-    return data.Location; // Return the file URL from S3
+    const command = new PutObjectCommand(params);
+    await s3.send(command); // Upload to S3
+
+    const fileURL = `https://${process.env.AWS_BUCKET_NAME}.s3.${process.env.AWS_REGION}.amazonaws.com/uploads/${fileName}`;
+
+    console.log("File uploaded successfully:", fileURL);
+    return fileURL; // Return the S3 URL
   } catch (error) {
     console.error("Error uploading to S3:", error);
     throw new Error("S3 Upload Failed");

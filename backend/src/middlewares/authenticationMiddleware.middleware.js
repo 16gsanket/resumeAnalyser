@@ -3,10 +3,10 @@ import asyncHandler from "../utils/asyncHandler.js";
 
 
 const authenticateUserCheck = asyncHandler(async(req, res, next) => {
-  console.log("Inside authenticateUserCheck middleware");
+ 
   
   passport.authenticate("jwt", { session: false }, (err, user, info) => {
-    console.log('user', user)
+  
     if (err) {
       console.error("Error during authentication:", err);
       return res.status(500).json({ message: "Internal server error" });
@@ -17,7 +17,6 @@ const authenticateUserCheck = asyncHandler(async(req, res, next) => {
     }
 
     req.user = user; // Attach user to request
-    console.log('user from authmiddleware', req.user)
     next(); // Move to next middleware/controller
   })(req, res, next); // Execute the middleware function
 })
