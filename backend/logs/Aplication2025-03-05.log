@@ -1,0 +1,78 @@
+{"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-05T02:08:29.835Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-03-05T02:08:30.130Z"}
+{"level":"info","message":"Login successful","timestamp":"2025-03-05T02:08:33.684Z"}
+{"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-05T03:05:43.311Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-03-05T03:05:43.735Z"}
+{"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-05T03:07:03.352Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-03-05T03:07:03.633Z"}
+{"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-05T03:07:13.362Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-03-05T03:07:13.672Z"}
+{"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-05T03:07:16.743Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-03-05T03:07:17.054Z"}
+{"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-05T03:07:42.013Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-03-05T03:07:42.277Z"}
+{"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-05T03:07:58.782Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-03-05T03:07:59.102Z"}
+{"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-05T03:08:03.305Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-03-05T03:08:03.590Z"}
+{"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-05T03:08:16.971Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-03-05T03:08:17.455Z"}
+{"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-05T03:08:23.795Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-03-05T03:08:24.057Z"}
+{"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-05T03:08:43.499Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-03-05T03:08:43.779Z"}
+{"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-05T03:08:45.424Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-03-05T03:08:45.744Z"}
+{"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-05T03:08:53.902Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-03-05T03:08:54.310Z"}
+{"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-05T03:08:55.674Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-03-05T03:08:55.921Z"}
+{"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-05T03:09:16.807Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-03-05T03:09:17.063Z"}
+{"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-05T03:09:24.978Z"}
+{"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-05T03:09:26.605Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-03-05T03:09:26.878Z"}
+{"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-05T03:09:44.663Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-03-05T03:09:44.985Z"}
+{"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-05T03:09:54.715Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-03-05T03:09:54.996Z"}
+{"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-05T03:09:57.181Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-03-05T03:09:57.439Z"}
+{"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-05T03:10:04.223Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-03-05T03:10:04.482Z"}
+{"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-05T03:10:20.340Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-03-05T03:10:20.594Z"}
+{"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-05T03:10:23.850Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-03-05T03:10:24.273Z"}
+{"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-05T03:10:28.147Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-03-05T03:10:28.418Z"}
+{"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-05T03:10:31.466Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-03-05T03:10:31.758Z"}
+{"level":"info","message":"Login successful","timestamp":"2025-03-05T03:11:54.448Z"}
+{"level":"info","message":"File uploaded successfully: Sanket Full Stack Resume Phhase 1.pdf","timestamp":"2025-03-05T03:12:26.935Z"}
+{"level":"info","message":"File uploaded to S3: https://resume-bucket-16gsanket.s3.ap-south-1.amazonaws.com/uploads/Sanket Full Stack Resume Phhase 1.pdf","timestamp":"2025-03-05T03:12:26.936Z"}
+{"level":"info","message":"Text extraction successful","timestamp":"2025-03-05T03:12:30.639Z"}
+{"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-05T03:13:18.481Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-03-05T03:13:18.878Z"}
+{"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-05T03:13:22.755Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-03-05T03:13:23.090Z"}
+{"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-05T03:13:26.836Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-03-05T03:13:27.138Z"}
+{"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-05T03:14:20.000Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-03-05T03:14:20.347Z"}
+{"level":"info","message":"File uploaded successfully: Sanket Full Stack Resume Phhase 1.pdf","timestamp":"2025-03-05T03:14:34.730Z"}
+{"level":"info","message":"File uploaded to S3: https://resume-bucket-16gsanket.s3.ap-south-1.amazonaws.com/uploads/Sanket Full Stack Resume Phhase 1.pdf","timestamp":"2025-03-05T03:14:34.730Z"}
+{"level":"info","message":"Text extraction successful","timestamp":"2025-03-05T03:14:38.540Z"}
+{"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-05T03:15:58.300Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-03-05T03:15:58.681Z"}
+{"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-05T03:17:30.317Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-03-05T03:17:30.765Z"}
+{"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-05T03:17:42.455Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-03-05T03:17:42.726Z"}
+{"level":"info","message":"File uploaded successfully: Sanket Full Stack Resume Phhase 1.pdf","timestamp":"2025-03-05T03:18:09.032Z"}
+{"level":"info","message":"File uploaded to S3: https://resume-bucket-16gsanket.s3.ap-south-1.amazonaws.com/uploads/Sanket Full Stack Resume Phhase 1.pdf","timestamp":"2025-03-05T03:18:09.032Z"}
+{"level":"info","message":"Text extraction successful","timestamp":"2025-03-05T03:18:12.786Z"}
+{"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-05T03:19:29.371Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-03-05T03:19:29.800Z"}
+{"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-05T03:59:46.761Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-03-05T03:59:47.065Z"}

@@ -3,7 +3,7 @@ import logger from "../utils/logger.js";
 import { uploadFileToS3, extractTextFromResume } from "../utils/s3.js";
 import asyncHandler from "../utils/asyncHandler.js";
 import fs from "fs";
-
+import axios from "axios";
 import resumeModels from "../models/resume.models.js";
 import userResumeModels from "../models/userResume.models.js";
 
@@ -66,13 +66,34 @@ const uploadToServer = asyncHandler(async (req, res) => {
 
     await userResumes.save();
 
+    const options = {
+      method: "POST",
+      url: "https://api.edenai.run/v2/text/entity_sentiment",
+      headers: {
+        authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiMmM0MmY2YzMtMTBmYy00Yzg0LWI0ZjQtNDYwZTEyODJjMDY0IiwidHlwZSI6ImFwaV90b2tlbiJ9.w1KGJLZ3RzOWCTROrH1S5il7hc00HZXJD7aWTCc-qiA",
+      },
+      data: {
+        providers: "amazon",
+        text: extractedText,
+        language: "en",
+      },
+    };
+    
+
+
     return res.status(200).json(
       new apiResponse(200, "File uploaded & text extracted", {
         filename: req.file.filename,
         s3Path: s3URL,
-        extractedText: extractedText || "Text extraction failed",
+        textAnalysis: extractedText || "Text extraction failed",
       })
     );
+
+
+   
+
+
+
   } catch (error) {
     logger.error("Error in file upload:", error);
     return res.status(500).json(new apiResponse(500, "Internal Server Error", null));

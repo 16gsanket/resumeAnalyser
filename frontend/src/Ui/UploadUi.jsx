@@ -2,7 +2,7 @@ import React, { useCallback, useState } from "react";
 import { useDropzone } from "react-dropzone";
 
 
-function UploadUi() {
+function UploadUi({setTextExtractedBoolean}) {
   const [file, setFile] = useState(null);
   const [uploading, setUploading] = useState(false);
   const [uploadedUrl, setUploadedUrl] = useState("");
@@ -39,7 +39,8 @@ function UploadUi() {
       console.log("Upload Response:", data); // ✅ Debugging Log
   
       if (data.statusCode === 200) {  // Check if response is OK
-        setUploadedUrl(data.data.path); // Update with correct file path
+        setUploadedUrl(data.data.path);
+        setTextExtractedBoolean(true) // Update with correct file path
         alert("File uploaded successfully!");
       } else {
         alert("File not uploaded, try again later.");
@@ -56,7 +57,7 @@ function UploadUi() {
 
 
   return (
-    <div className="flex flex-col items-center justify-center w-[600px] mt-28 mx-auto h-64 border-2 border-dashed hover:border-gray-200 border-gray-400 rounded-lg p-5 bg-gray-900 text-white cursor-pointer">
+    <div className="flex flex-col items-center justify-center w-[600px] mt-2 mb-20 mx-auto h-64 border-2 border-dashed hover:border-gray-200 border-gray-400 rounded-lg p-5 bg-gray-900 text-white cursor-pointer">
       <div {...getRootProps()} className="w-full h-full flex items-center justify-center">
         <input {...getInputProps()} />
         {!file && <p className="text-gray-500">Drag & Drop your files here, or click to select files</p>}

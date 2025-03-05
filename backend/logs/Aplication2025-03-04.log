@@ -179,3 +179,10 @@
 {"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-04T15:13:26.864Z"}
 {"level":"info","message":"Database connected","timestamp":"2025-03-04T15:13:27.160Z"}
 {"level":"info","message":"Login successful","timestamp":"2025-03-04T15:22:42.157Z"}
+{"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-04T16:49:17.563Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-03-04T16:49:18.036Z"}
+{"level":"info","message":"Login successful","timestamp":"2025-03-04T16:49:24.215Z"}
+{"level":"info","message":"Login successful","timestamp":"2025-03-04T16:50:00.412Z"}
+{"level":"info","message":"File uploaded successfully: Sanket Full Stack Resume Phhase 2.pdf","timestamp":"2025-03-04T16:50:42.121Z"}
+{"level":"info","message":"File uploaded to S3: https://resume-bucket-16gsanket.s3.ap-south-1.amazonaws.com/uploads/Sanket Full Stack Resume Phhase 2.pdf","timestamp":"2025-03-04T16:50:42.121Z"}
+{"level":"info","message":"Text extraction successful","timestamp":"2025-03-04T16:50:45.292Z"}
