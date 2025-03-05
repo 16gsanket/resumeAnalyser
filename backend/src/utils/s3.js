@@ -73,7 +73,6 @@ export const extractTextFromResume = async (s3URL) => {
       .map((block) => block.Text)
       .join(" ");
 
-    console.log("Extracted Text:", extractedText);
     return extractedText || "No text extracted";
   } catch (error) {
     console.error("Error extracting text from Textract:", error);

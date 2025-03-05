@@ -5,6 +5,7 @@ import ThreePoints from '../Ui/ThreePoints';
 
 function HomePage() {
   const [textExtractedBoolean, setTextExtractedBoolean] = useState(false);
+  const [analysedData ,  setAnalysedData] = useState({});
   return (
     <div className='h-full w-full pt-10 overflow-y-scroll'>
       <div className='h-[48dvh] w-full bg-primary-950 pt-20  mt-20'>
@@ -15,9 +16,9 @@ function HomePage() {
         </div>
 
       </div>
-      <UploadUi setTextExtractedBoolean={setTextExtractedBoolean}/>
-      <div className='h-[600px] w-full '>
-        <ThreePoints />
+      <UploadUi setTextExtractedBoolean={setTextExtractedBoolean} setAnalysedData={setAnalysedData}/>
+      <div className='h-[fit] w-full '>
+        {textExtractedBoolean && <ThreePoints analysedData={analysedData}/>}
       </div>
     </div>
   )
