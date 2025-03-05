@@ -20,6 +20,7 @@ function UploadUi({ setTextExtractedBoolean, setAnalysedData,  setExtractedText 
   const handleUpload = async () => {
     setIsLoading(true)
     const token = localStorage.getItem("token");
+    
     if (!file) return alert("Please select a file first!");
 
     setUploading(true);
@@ -34,6 +35,7 @@ function UploadUi({ setTextExtractedBoolean, setAnalysedData,  setExtractedText 
           body: formData,
           headers: {
             Authorization: `Bearer ${token}`,
+           
           },
         }
       );

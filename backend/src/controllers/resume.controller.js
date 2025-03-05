@@ -11,6 +11,7 @@ import userResumeModels from '../models/userResume.models.js';
 import checkResumeValid from '../utils/checkResumeValid.js';
 
 const uploadToServer = asyncHandler(async (req, res) => {
+
   try {
     if (!req.file) {
       return res
@@ -18,7 +19,7 @@ const uploadToServer = asyncHandler(async (req, res) => {
         .json(new apiResponse(400, 'No file uploaded', null));
     }
 
-    console.log('User uploading file:', req.user);
+    
 
     const filePath = req.file.path; // Temporary file storage path
     const fileName = req.file.originalname; // Original file name
@@ -33,6 +34,8 @@ const uploadToServer = asyncHandler(async (req, res) => {
         .status(500)
         .json(new apiResponse(500, 'Failed to upload file to S3', null));
     }
+
+    logger.info(`File uploaded to S3: ${s3URL}`);
 
     // ✅ Delete local file after successful upload
     fs.unlink(filePath, (err) => {
@@ -155,7 +158,7 @@ const uploadToServer = asyncHandler(async (req, res) => {
     // }
 
     const result = await model.generateContent(prompt);
-    console.log('google ai result', result.response.text());
+    
 
     const resulted_json = parseJSON(result.response.text());
 

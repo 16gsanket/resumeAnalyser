@@ -19,8 +19,10 @@ export default function passportJWTConfig(passport) {
   passport.use(
     new JwtStrategy(opts, async (jwt_payload, done) => {
       try {
+       
         // jwt_payload is the decoded token, e.g. { id: <USER_ID>, iat, exp }
         const user = await User.findById(jwt_payload.id);
+
         if (user) {
           // If the user is found, return it
           return done(null, user);

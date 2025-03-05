@@ -6,6 +6,8 @@ import healthCheckRoute from './routes/health/healthCheckRoute.js';
 import authRoute from './routes/authRoute.route.js';
 
 import passportJWTConfig from './middlewares/passport-jwt.js';
+import passportGoogleConfig from './middlewares/google-passport.middleware.js';
+
 import passport from 'passport';
 import resumeRoute from './routes/ResumeRoutes/resume.routes.js';
 
@@ -29,6 +31,7 @@ app.use(express.static('public'));
 app.use(passport.initialize())
 
 // configure the passport with out JWT strategy
+passportGoogleConfig(passport)
 passportJWTConfig(passport)
 
 //app route consfiguration

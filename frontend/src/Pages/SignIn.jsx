@@ -1,5 +1,5 @@
-import React, { use, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import React, { use, useEffect, useState } from "react";
+import { Link, useNavigate, useSearchParams } from "react-router-dom";
 import {useDispatch} from 'react-redux'
 import { setUser } from "../Feature/Auth/userSlice";
 
@@ -12,9 +12,30 @@ function SignIn() {
   const[password , setPassword] = useState('')
   const dispatch = useDispatch()
 
+  const [searchParams] = useSearchParams();
+
+  useEffect(() => {
+    const token = searchParams.get('token');
+    const email = searchParams.get('email');
+    const userId = searchParams.get('userId');
+
+    console.log('token', token)
+    console.log('email', email)
+    console.log('userId', userId)
+
+    if (token) {
+      localStorage.setItem('token', token);
+      // Optionally, update your state or dispatch an action to store the user info
+      dispatch(setUser(
+        {email:'test' , userId:'test'}
+      )
+      )
+      navigate('/home')
+    }
+  }, [searchParams]);
+
  async function handleSubmit(formData) {
   
-    console.log(formData);
     const email = formData.get("email");
     const password = formData.get("password");
     console.log(email,password);
@@ -51,6 +72,32 @@ function SignIn() {
 
   }
 
+  const GoogleLoginButton = async() => {
+    
+    const response = await fetch('http://localhost:8000/api/v1/auth/google', {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
+  
+    const data = await response.json()
+  
+    console.log(data);
+  
+    if (data.statusCode === 200) {
+      localStorage.setItem('token', data.data.token);
+      dispatch(setUser({
+        email: data.data.user.email,
+        userId: data.data.user.id
+      }))
+      navigate('/home')
+    } else {
+      alert('Google Authentication failed')
+    }
+    
+  };
+
   return (
     <div className="flex w-full max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800 lg:max-w-4xl mt-[130px]  ">
       <div
@@ -75,7 +122,7 @@ function SignIn() {
         </p>
 
         <a
-          href="#"
+          href="http://localhost:8000/api/v1/auth/google"
           className="flex items-center justify-center mt-4 text-gray-600 transition-colors duration-300 transform border rounded-lg dark:border-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600"
         >
           <div className="px-4 py-2">

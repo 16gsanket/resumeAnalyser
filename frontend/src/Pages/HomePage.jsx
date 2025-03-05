@@ -28,9 +28,9 @@ function HomePage() {
             </span>{" "}
             and{" "}
             <span className="text-green-300 font-semibold text-[55px]">
-              Get Hired{" "}
+              Get Recruited !{" "}
             </span>{" "}
-            !
+            
           </h1>
           <h3 className="mt-16 text-[25px] pl-4 text-center">
             Using the latest Gen AI we curate a analysis perfect for your
