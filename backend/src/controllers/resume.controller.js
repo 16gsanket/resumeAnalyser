@@ -54,7 +54,6 @@ const uploadToServer = asyncHandler(async (req, res) => {
       fileType: fileType,
       fileSize: req.file.size,
     });
-   
 
     await resumeCreated.save();
 
@@ -73,31 +72,88 @@ const uploadToServer = asyncHandler(async (req, res) => {
 
     await userResumes.save();
 
-    const genAI = new GoogleGenerativeAI(
-      process.env.GEMMINI_API_KEY
-    );
+    const genAI = new GoogleGenerativeAI(process.env.GEMMINI_API_KEY);
     const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
 
     // const prompt = 'Analyse this text from a resume and tell me its strenght, weaknesses';
     const prompt = `
-    You are a career guidance advisor. Analyze the resume text below and provide structured career feedback in a refined JSON format as follows:
-    
-    return JSON string that contains unnecessary escape sequences (e.g., "\n" and "\"). Please remove all these escape characters and reformat the JSON so that it is clean, properly indented, and human‑readable. Only output the cleaned JSON without any additional text.
+    You are a career guidance advisor. Analyze the resume text below and provide structured career feedback in a refined JSON format with the following keys:
+    {
+      "personal_feedback": {
+        "strengths": <string>,
+        "weaknesses": <string>
+      },
+      "next_steps": [ 
+        { 
+          "action": <string>, 
+          "details": <string> 
+        } 
+      ],
+      "specific_advice": {
+        "resume_structure": <string>,
+        "experience_section": <string>,
+        "education_section": <string>,
+        "skills_section": <string>,
+        "projects_section": <string>,
+        "portfolio": <string>
+      },
+      "career_growth_next_steps": [
+        {
+          "action": <string>,
+          "details": <string>
+        }
+      ],
+      "career_navigation_advice": {
+        <string key-value pairs>
+      }
+    }
+    Output only valid JSON without any extra text, escape sequences, or comments.
     Example:
-    {"personal_feedback":{"strengths":"Strong technical skills and measurable achievements.","weaknesses":"Resume structure is cluttered and lacks a clear summary."},"next_steps":[{"action":"Improve Structure","details":"Add a professional summary and reorganize sections for clarity."}],"specific_advice":{"resume_structure":"Introduce a concise summary and clearly separate sections.","experience_section":"Group similar tasks and emphasize results.","education_section":"Include specific academic achievements.","skills_section":"Categorize and detail technical skills.","projects_section":"Explain project challenges and outcomes.","portfolio":"Ensure the portfolio is updated and linked."}}
-
-    return JSON string that contains unnecessary escape sequences example,  "\n" and "\".
+    {
+      "personal_feedback": {
+        "strengths": "Strong technical skills and measurable achievements.",
+        "weaknesses": "Resume structure is cluttered and lacks a clear summary."
+      },
+      "next_steps": [
+        {
+          "action": "Improve Structure",
+          "details": "Add a professional summary and reorganize sections for clarity."
+        }
+      ],
+      "specific_advice": {
+        "resume_structure": "Introduce a concise summary and clearly separate sections.",
+        "experience_section": "Group similar tasks and emphasize quantifiable results.",
+        "education_section": "Include relevant academic achievements and coursework.",
+        "skills_section": "Categorize technical and soft skills with examples.",
+        "projects_section": "Explain project challenges, technologies used, and outcomes.",
+        "portfolio": "Ensure your online portfolio is updated and linked."
+      },
+      "career_growth_next_steps": [
+        {
+          "action": "Expand Technical Expertise",
+          "details": "Consider learning emerging technologies and obtaining relevant certifications."
+        }
+      ],
+      "career_navigation_advice": 
+        [
+      {
+        "strategy": "Network actively, seek mentorship, and attend industry events to navigate your career path effectively.",
+         "networking": "include he networking data here if any."
+         }
+        ]
+      
+    }
+    
     Resume Text:
-
     ${extractedText}
     `;
 
     // const isResume = checkResumeValid(extractedText);
-    
+
     // if(!isResume){
     //   return res.status(400).json(new apiResponse(400, 'Resume is not valid', null));
     // }
-    
+
     const result = await model.generateContent(prompt);
     console.log('google ai result', result.response.text());
 
@@ -108,6 +164,7 @@ const uploadToServer = asyncHandler(async (req, res) => {
         filename: req.file.filename,
         s3Path: s3URL,
         textAnalysis: resulted_json || 'Text extraction failed',
+        textExtracted: extractedText,
       })
     );
   } catch (error) {

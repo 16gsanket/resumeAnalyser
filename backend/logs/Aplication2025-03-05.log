@@ -452,3 +452,89 @@
 {"level":"info","message":"File uploaded successfully: tcs cv.pdf","timestamp":"2025-03-05T09:36:31.078Z"}
 {"level":"info","message":"File uploaded to S3: https://resume-bucket-16gsanket.s3.ap-south-1.amazonaws.com/uploads/tcs cv.pdf","timestamp":"2025-03-05T09:36:31.078Z"}
 {"level":"info","message":"Text extraction successful","timestamp":"2025-03-05T09:36:34.818Z"}
+{"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-05T10:02:37.428Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-03-05T10:02:37.750Z"}
+{"level":"info","message":"Login successful","timestamp":"2025-03-05T10:44:34.589Z"}
+{"level":"info","message":"Login successful","timestamp":"2025-03-05T10:45:52.269Z"}
+{"level":"info","message":"File uploaded successfully: tcs cv.pdf","timestamp":"2025-03-05T10:46:02.251Z"}
+{"level":"info","message":"File uploaded to S3: https://resume-bucket-16gsanket.s3.ap-south-1.amazonaws.com/uploads/tcs cv.pdf","timestamp":"2025-03-05T10:46:02.252Z"}
+{"level":"info","message":"Text extraction successful","timestamp":"2025-03-05T10:46:05.930Z"}
+{"level":"info","message":"File uploaded successfully: tcs cv.pdf","timestamp":"2025-03-05T10:49:24.010Z"}
+{"level":"info","message":"File uploaded to S3: https://resume-bucket-16gsanket.s3.ap-south-1.amazonaws.com/uploads/tcs cv.pdf","timestamp":"2025-03-05T10:49:24.011Z"}
+{"level":"info","message":"Text extraction successful","timestamp":"2025-03-05T10:49:27.513Z"}
+{"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-05T10:51:58.064Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-03-05T10:51:58.383Z"}
+{"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-05T10:52:00.706Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-03-05T10:52:00.945Z"}
+{"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-05T10:52:04.011Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-03-05T10:52:04.251Z"}
+{"level":"info","message":"Login successful","timestamp":"2025-03-05T10:55:19.629Z"}
+{"level":"info","message":"File uploaded successfully: tcs cv.pdf","timestamp":"2025-03-05T11:17:03.954Z"}
+{"level":"info","message":"File uploaded to S3: https://resume-bucket-16gsanket.s3.ap-south-1.amazonaws.com/uploads/tcs cv.pdf","timestamp":"2025-03-05T11:17:03.954Z"}
+{"level":"info","message":"Text extraction successful","timestamp":"2025-03-05T11:17:07.263Z"}
+{"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-05T11:32:14.760Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-03-05T11:32:14.990Z"}
+{"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-05T11:32:17.111Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-03-05T11:32:17.318Z"}
+{"level":"info","message":"Login successful","timestamp":"2025-03-05T11:32:33.644Z"}
+{"level":"info","message":"File uploaded successfully: tcs cv.pdf","timestamp":"2025-03-05T11:32:39.907Z"}
+{"level":"info","message":"File uploaded to S3: https://resume-bucket-16gsanket.s3.ap-south-1.amazonaws.com/uploads/tcs cv.pdf","timestamp":"2025-03-05T11:32:39.907Z"}
+{"level":"info","message":"Text extraction successful","timestamp":"2025-03-05T11:32:43.345Z"}
+{"level":"info","message":"File uploaded successfully: tcs cv.pdf","timestamp":"2025-03-05T11:50:34.653Z"}
+{"level":"info","message":"File uploaded to S3: https://resume-bucket-16gsanket.s3.ap-south-1.amazonaws.com/uploads/tcs cv.pdf","timestamp":"2025-03-05T11:50:34.653Z"}
+{"level":"info","message":"Text extraction successful","timestamp":"2025-03-05T11:50:37.862Z"}
+{"level":"info","message":"File uploaded successfully: tcs cv.pdf","timestamp":"2025-03-05T11:51:11.794Z"}
+{"level":"info","message":"File uploaded to S3: https://resume-bucket-16gsanket.s3.ap-south-1.amazonaws.com/uploads/tcs cv.pdf","timestamp":"2025-03-05T11:51:11.795Z"}
+{"level":"info","message":"Text extraction successful","timestamp":"2025-03-05T11:51:15.134Z"}
+{"level":"info","message":"Login successful","timestamp":"2025-03-05T12:24:58.183Z"}
+{"level":"info","message":"File uploaded successfully: tcs cv.pdf","timestamp":"2025-03-05T12:25:13.160Z"}
+{"level":"info","message":"File uploaded to S3: https://resume-bucket-16gsanket.s3.ap-south-1.amazonaws.com/uploads/tcs cv.pdf","timestamp":"2025-03-05T12:25:13.160Z"}
+{"level":"info","message":"Text extraction successful","timestamp":"2025-03-05T12:25:16.865Z"}
+{"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-05T12:27:38.428Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-03-05T12:27:38.713Z"}
+{"level":"info","message":"File uploaded successfully: tcs cv.pdf","timestamp":"2025-03-05T12:27:44.078Z"}
+{"level":"info","message":"File uploaded to S3: https://resume-bucket-16gsanket.s3.ap-south-1.amazonaws.com/uploads/tcs cv.pdf","timestamp":"2025-03-05T12:27:44.079Z"}
+{"level":"info","message":"Text extraction successful","timestamp":"2025-03-05T12:27:47.358Z"}
+{"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-05T12:28:47.670Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-03-05T12:28:47.973Z"}
+{"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-05T12:28:50.666Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-03-05T12:28:51.398Z"}
+{"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-05T12:28:57.176Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-03-05T12:28:57.474Z"}
+{"level":"info","message":"File uploaded successfully: tcs cv.pdf","timestamp":"2025-03-05T12:29:07.173Z"}
+{"level":"info","message":"File uploaded to S3: https://resume-bucket-16gsanket.s3.ap-south-1.amazonaws.com/uploads/tcs cv.pdf","timestamp":"2025-03-05T12:29:07.174Z"}
+{"level":"info","message":"Text extraction successful","timestamp":"2025-03-05T12:29:10.831Z"}
+{"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-05T12:29:59.553Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-03-05T12:29:59.807Z"}
+{"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-05T12:30:17.176Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-03-05T12:30:17.477Z"}
+{"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-05T12:30:30.529Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-03-05T12:30:30.795Z"}
+{"level":"info","message":"Login successful","timestamp":"2025-03-05T12:30:42.797Z"}
+{"level":"info","message":"File uploaded successfully: tcs cv.pdf","timestamp":"2025-03-05T12:30:57.389Z"}
+{"level":"info","message":"File uploaded to S3: https://resume-bucket-16gsanket.s3.ap-south-1.amazonaws.com/uploads/tcs cv.pdf","timestamp":"2025-03-05T12:30:57.389Z"}
+{"level":"info","message":"Text extraction successful","timestamp":"2025-03-05T12:31:00.969Z"}
+{"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-05T12:31:43.964Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-03-05T12:31:44.262Z"}
+{"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-05T12:31:47.093Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-03-05T12:31:47.346Z"}
+{"level":"info","message":"File uploaded successfully: tcs cv.pdf","timestamp":"2025-03-05T12:31:50.245Z"}
+{"level":"info","message":"File uploaded to S3: https://resume-bucket-16gsanket.s3.ap-south-1.amazonaws.com/uploads/tcs cv.pdf","timestamp":"2025-03-05T12:31:50.246Z"}
+{"level":"info","message":"Text extraction successful","timestamp":"2025-03-05T12:31:53.597Z"}
+{"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-05T12:32:45.128Z"}
+{"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-05T12:32:47.739Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-03-05T12:32:48.010Z"}
+{"level":"info","message":"Login successful","timestamp":"2025-03-05T12:33:11.336Z"}
+{"level":"info","message":"File uploaded successfully: tcs cv.pdf","timestamp":"2025-03-05T12:33:20.791Z"}
+{"level":"info","message":"File uploaded to S3: https://resume-bucket-16gsanket.s3.ap-south-1.amazonaws.com/uploads/tcs cv.pdf","timestamp":"2025-03-05T12:33:20.791Z"}
+{"level":"info","message":"Text extraction successful","timestamp":"2025-03-05T12:33:24.190Z"}
+{"level":"info","message":"File uploaded successfully: tcs cv.pdf","timestamp":"2025-03-05T12:37:15.511Z"}
+{"level":"info","message":"File uploaded to S3: https://resume-bucket-16gsanket.s3.ap-south-1.amazonaws.com/uploads/tcs cv.pdf","timestamp":"2025-03-05T12:37:15.512Z"}
+{"level":"info","message":"Text extraction successful","timestamp":"2025-03-05T12:37:18.756Z"}
+{"level":"info","message":"File uploaded successfully: Sanket Full Stack Resume Phhase 2.pdf","timestamp":"2025-03-05T12:37:47.429Z"}
+{"level":"info","message":"File uploaded to S3: https://resume-bucket-16gsanket.s3.ap-south-1.amazonaws.com/uploads/Sanket Full Stack Resume Phhase 2.pdf","timestamp":"2025-03-05T12:37:47.429Z"}
+{"level":"info","message":"Text extraction successful","timestamp":"2025-03-05T12:37:50.524Z"}
+{"level":"info","message":"Login successful","timestamp":"2025-03-05T12:44:29.101Z"}
+{"level":"info","message":"File uploaded successfully: Sanket Gaikwad_Web Developemnt.pdf","timestamp":"2025-03-05T12:44:41.707Z"}
+{"level":"info","message":"File uploaded to S3: https://resume-bucket-16gsanket.s3.ap-south-1.amazonaws.com/uploads/Sanket Gaikwad_Web Developemnt.pdf","timestamp":"2025-03-05T12:44:41.708Z"}
+{"level":"info","message":"Text extraction successful","timestamp":"2025-03-05T12:44:44.794Z"}

@@ -1,10 +1,12 @@
 import React, { useCallback, useState } from "react";
 import { useDropzone } from "react-dropzone";
+import Spinner from "../Components/Spiner";
 
-function UploadUi({ setTextExtractedBoolean, setAnalysedData }) {
+function UploadUi({ setTextExtractedBoolean, setAnalysedData,  setExtractedText }) {
   const [file, setFile] = useState(null);
   const [uploading, setUploading] = useState(false);
   const [uploadedUrl, setUploadedUrl] = useState("");
+  const [isLoading , setIsLoading] = useState(false)
 
   const onDrop = useCallback((acceptedFiles) => {
     setFile(acceptedFiles[0]); // Selects the first file only
@@ -16,6 +18,7 @@ function UploadUi({ setTextExtractedBoolean, setAnalysedData }) {
   });
 
   const handleUpload = async () => {
+    setIsLoading(true)
     const token = localStorage.getItem("token");
     if (!file) return alert("Please select a file first!");
 
@@ -47,6 +50,7 @@ function UploadUi({ setTextExtractedBoolean, setAnalysedData }) {
         // Check if response is OK
         setUploadedUrl(data.data.path);
         setTextExtractedBoolean(true);// Update with correct file path
+        setExtractedText(data.data.textExtracted);
         setAnalysedData(data.data.textAnalysis);
 
 
@@ -58,6 +62,7 @@ function UploadUi({ setTextExtractedBoolean, setAnalysedData }) {
       throw new Error(error);
     } finally {
       setUploading(false);
+      setIsLoading(false);
     }
   };
 
@@ -82,8 +87,9 @@ function UploadUi({ setTextExtractedBoolean, setAnalysedData }) {
           <button
             onClick={handleUpload}
             className="mt-3 px-4 py-2 bg-blue-500 rounded"
+            disabled={isLoading}
           >
-            {uploading ? "Uploading..." : "Upload File"}
+            {uploading ? <span className="flex align-middle justify-center items-center"> Uploading File<Spinner /></span> : "Upload File"}
           </button>
         </div>
       )}
