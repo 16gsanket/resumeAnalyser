@@ -33,6 +33,7 @@ function Navbar() {
            {userState.isAuthenticated && <li className='hover:text-accent-500 hover:cursor-pointer' onClick={()=>navigate('/home')}>Home</li>}
             <li className='hover:text-accent-500 hover:cursor-pointer' onClick={()=>navigate('/pricing')}>Pricing</li>
             <li className='hover:text-accent-500 hover:cursor-pointer' onClick={()=>navigate('/about-us')}>About us</li>
+            {userState.isAuthenticated === false && <li className='hover:text-accent-500 hover:cursor-pointer' onClick={()=>navigate('/')}>Sign In</li>}
            {userState.isAuthenticated && <li className='text-red-700 hover:text-red-900 hover:cursor-pointer' onClick={()=>handleLogout()}>Logout</li>}
         </ul>
 

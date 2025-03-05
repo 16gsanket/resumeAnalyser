@@ -7,22 +7,29 @@ import HomePage from "./Pages/HomePage";
 import { Provider } from "react-redux";
 import store from "./Feature/app/store";
 import ProtectedElement from "./Components/ProtectedElement";
+import About from "./Pages/About";
+import Prices from "./Pages/Prices";
 
 function App() {
   const router = createBrowserRouter([
     {
       element: <AppLayout />,
       errorElement: <ErrorPage />,
+      
       children: [
         {
           path: "/",
           element: <SignIn />,
         },
 
-        // {
-        //   path: "/home",
-        //   element: <HomePage />,
-        // },
+        {
+          path: "/about-us",
+          element: <About />,
+        },
+        {
+          path: "/pricing",
+          element: <Prices />,
+        },
 
         {
          

@@ -112,7 +112,8 @@ function SignIn() {
         <div className="flex justify-center mx-auto">
           <img
             className="w-auto h-7 sm:h-8"
-            src="https://merakiui.com/images/logo.svg"
+            // src="https://merakiui.com/images/logo.svg"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT68qCVte7kY0bWK41UQSv8iBt_HgYNq-BXZA&s"
             alt=""
           />
         </div>
@@ -221,10 +222,10 @@ function SignIn() {
           <span className="w-1/5 border-b dark:border-gray-600 md:w-1/4"></span>
 
           <Link
-             to='/home'
-            className="text-xs text-gray-500 uppercase dark:text-gray-400 hover:underline"
+            //  to='/home'
+            className="text-xs text-gray-500  dark:text-gray-400 hover:underline"
           >
-            or continue up as Guest
+            Powered By MERN + AWS 
           </Link>
 
           <span className="w-1/5 border-b dark:border-gray-600 md:w-1/4"></span>
