@@ -33,14 +33,14 @@ A web application that analyzes resumes using AWS Textract and Google Gemini AI 
 
 ### Installation
 
-1. Clone the repository:
+1.⿻Clone the repository:
 ```bash
 git clone https://github.com/your-username/resume-review-agent.git
 cd resume-review-agent
 
 ```
 
-2.Installing Dependencies:
+2.🛠️Installing Dependencies:
  a)frontend
    ```bash
     cd frontend
@@ -59,7 +59,8 @@ cd resume-review-agent
     VITE_GEMMINI_API_KEY =
     VITE_SERVER_URL =
     ```
-  a.)💻BACKEND (.env)
+  a.)🗄️BACKEND (.env)
+  <br>
     ```bash
     PORT = 
     CORS_ORIGIN = *
@@ -77,17 +78,25 @@ GOOGLE_CLIENT_SECRET=
 CLIENT_URL = 
 SERVER_URL = 
     ```
-
+<br>
 3.Run Application
+<br>
    a)frontend
+   <br>
    ```bash
     cd frontend
     npm run dev
   ```
+<br>
  a)backend
+ <br>
    ```bash
     cd backend
     npm run dev
   ```
+  <br>
+
+
+  **NOTE : This Application is not based on Microservice Architecture, under load it might break⛓️‍💥**
 
 
