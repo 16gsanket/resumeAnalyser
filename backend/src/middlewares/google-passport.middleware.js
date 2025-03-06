@@ -13,7 +13,7 @@ export default function passportGoogleConfig(passport) {
         clientSecret: process.env.GOOGLE_CLIENT_SECRET,  // Google Client Secret from your .env
         callbackURL: `https://resumeanalyser-0hwr.onrender.com/api/v1/auth/google/callback`,            // Must match your Google API Console settings
       },
-      async (profile, done) => {
+      async (accessToken, refreshToken,profile, done) => {
         try {
           // Check if a user with this Google ID already exists
           let user = await User.findOne({ 
