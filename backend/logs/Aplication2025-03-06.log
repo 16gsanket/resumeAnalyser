@@ -28,3 +28,5 @@
 {"level":"info","message":"Text extraction successful","timestamp":"2025-03-06T05:20:39.820Z"}
 {"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-06T05:23:51.417Z"}
 {"level":"info","message":"Database connected","timestamp":"2025-03-06T05:23:51.661Z"}
+{"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-06T05:30:01.421Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-03-06T05:30:01.718Z"}
