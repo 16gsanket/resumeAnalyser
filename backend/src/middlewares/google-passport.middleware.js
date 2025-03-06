@@ -10,7 +10,7 @@ export default function passportGoogleConfig(passport) {
       {
         clientID: process.env.GOOGLE_CLIENT_ID,        // Google Client ID from your .env
         clientSecret: process.env.GOOGLE_CLIENT_SECRET,  // Google Client Secret from your .env
-        callbackURL: `${process.env.SERVER_URL}/api/v1/auth/google/callback`,            // Must match your Google API Console settings
+        callbackURL: `https://resumeanalyser-0hwr.onrender.com/api/v1/auth/google/callback`,            // Must match your Google API Console settings
       },
       async (profile, done) => {
         try {

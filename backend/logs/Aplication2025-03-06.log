@@ -42,3 +42,5 @@
 {"level":"info","message":"Database connected","timestamp":"2025-03-06T06:01:57.983Z"}
 {"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-06T06:02:08.320Z"}
 {"level":"info","message":"Database connected","timestamp":"2025-03-06T06:02:08.564Z"}
+{"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-06T06:03:21.803Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-03-06T06:03:22.035Z"}
