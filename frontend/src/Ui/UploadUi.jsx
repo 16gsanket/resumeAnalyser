@@ -72,7 +72,7 @@ function UploadUi({ setTextExtractedBoolean, setAnalysedData,  setExtractedText 
   };
 
   return (
-    <div className="flex flex-col items-center justify-center w-[600px] mt-2 mb-20 mx-auto h-64 border-2 border-dashed hover:border-gray-200 border-gray-400 rounded-lg p-5 bg-gray-900 text-white cursor-pointer">
+    <div className="flex flex-col items-center justify-center w-[95dvw] text-center md:w-[600px] mt-2 mb-20 mx-auto h-64 border-2 border-dashed hover:border-gray-200 border-gray-400 rounded-lg p-5 bg-gray-900 text-white cursor-pointer">
       <div
         {...getRootProps()}
         className="w-full h-full flex items-center justify-center"

@@ -16,7 +16,7 @@ function ThreePoints({ analysedData }) {
     const {networking , strategy, mentorship , skillDevelopment } = analysedData.career_navigation_advice;
   return (
     <div className="p-6  rounded-lg shadow-md max-w-4xl mx-auto">
-      <h2 className="text-[50px] font-bold mb-6 text-center pb-10">
+      <h2 className="text-[50px] font-bold mb-6 text-center pb-10 leading-normal">
         Career Analysis Feedback
       </h2>
 

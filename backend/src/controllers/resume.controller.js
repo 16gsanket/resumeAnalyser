@@ -25,11 +25,11 @@ const uploadToServer = asyncHandler(async (req, res) => {
     const fileName = req.file.originalname; // Original file name
     const fileType = req.file.mimetype.split('/')[1].toLowerCase(); // Extract file type from MIME type
 
-    if(fileType !== 'pdf'){
-      return res
-        .status(400)
-        .json(new apiResponse(400, 'Only PDF files are allowed', null));
-    }
+    // if(fileType !== 'pdf'){
+    //   return res
+    //     .status(400)
+    //     .json(new apiResponse(400, 'Only PDF files are allowed', null));
+    // }
 
     
 

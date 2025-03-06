@@ -17,7 +17,7 @@ function HomePage() {
 
   return (
     <div className="h-full w-full pt-10 overflow-y-scroll">
-      <div className="h-[48dvh] w-full bg-primary-950 pt-20  mt-20" id="home">
+      <div className="h-[48dvh] w-full bg-primary-950 pt-20  mt-20 mb-32" id="home">
         <div className="lg:w-[1200px] w-full h-fit mx-auto ">
           <h1 className="text-[50px] text-center font-light leading-normal">
             Get Your{" "}
@@ -30,7 +30,7 @@ function HomePage() {
             </span>{" "}
             
           </h1>
-          <h3 className="mt-16 text-[25px] pl-4 text-center">
+          <h3 className="mt-16 text-[25px] pl-4 text-center leading-loose">
             Using the latest Gen AI we curate a analysis perfect for your
             Resume, so you can{" "}
             <span className="text-accent-500 font-semibold text-[30px]">
