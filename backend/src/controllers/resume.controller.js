@@ -23,7 +23,15 @@ const uploadToServer = asyncHandler(async (req, res) => {
 
     const filePath = req.file.path; // Temporary file storage path
     const fileName = req.file.originalname; // Original file name
-    const fileType = req.file.mimetype.split('/')[1]; // Extract file type from MIME type
+    const fileType = req.file.mimetype.split('/')[1].toLowerCase(); // Extract file type from MIME type
+
+    if(fileType !== 'pdf'){
+      return res
+        .status(400)
+        .json(new apiResponse(400, 'Only PDF files are allowed', null));
+    }
+
+    
 
     // ✅ Upload file to S3
     const s3URL = await uploadFileToS3(filePath, fileName);
