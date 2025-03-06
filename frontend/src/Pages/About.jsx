@@ -21,28 +21,29 @@ function About() {
             <div>
               <img
                 className="object-cover rounded-xl aspect-square"
-                src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+                src="https://res.cloudinary.com/ddodvrq4x/image/upload/v1741244055/portfolio/nyop8vi7hylpndmotemg.jpg"
                 alt=""
               />
 
               <h1 className="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white">
-                John Doe
+                Sanket
               </h1>
 
               <p className="mt-2 text-gray-500 capitalize dark:text-gray-300">
-                Full stack developer
+                Full Stack Blockchain developer
               </p>
             </div>
 
             <div>
               <img
                 className="object-cover rounded-xl aspect-square"
-                src="https://images.unsplash.com/photo-1499470932971-a90681ce8530?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                // src="https://images.unsplash.com/photo-1499470932971-a90681ce8530?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                src="https://res.cloudinary.com/ddodvrq4x/image/upload/v1741244389/portfolio/czquwxerppfec4epzrxs.jpg"
                 alt=""
               />
 
               <h1 className="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white">
-                Mia
+                Mr Brain
               </h1>
 
               <p className="mt-2 text-gray-500 capitalize dark:text-gray-300">
