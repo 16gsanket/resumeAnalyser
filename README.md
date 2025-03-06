@@ -52,7 +52,9 @@ cd resume-review-agent
     npm i
   ```
 3.Setting Environment Variables:
+<br>
   a.)💻FRONTEND (.env)
+  <br>
     ```bash
     VITE_GEMMINI_API_KEY =
     VITE_SERVER_URL =
