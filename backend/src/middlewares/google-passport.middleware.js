@@ -4,6 +4,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 export default function passportGoogleConfig(passport) {
+  console.log('google call back usrl is' , `${process.env.SERVER_URL}/api/v1/auth/google/callback`)
   passport.use(
     new GoogleStrategy(
       {
