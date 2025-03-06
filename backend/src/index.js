@@ -2,7 +2,7 @@ import app from "./app.js";
 import logger from "./utils/logger.js";
 import connectDB from "./db/index.js";
 
-
+const port = process.env.PORT || 8000;
 
 connectDB()
   .then(
