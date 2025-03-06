@@ -29,7 +29,8 @@ function UploadUi({ setTextExtractedBoolean, setAnalysedData,  setExtractedText 
 
     try {
       const response = await fetch(
-        "http://localhost:8000/api/v1/resume/upload-file-resume",
+        `${import.meta.env.VITE_SERVER_URL}/api/v1/resume/upload-file-resume`,
+      
         {
           method: "POST",
           body: formData,
@@ -39,6 +40,8 @@ function UploadUi({ setTextExtractedBoolean, setAnalysedData,  setExtractedText 
           },
         }
       );
+
+      console.log(response)
 
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);

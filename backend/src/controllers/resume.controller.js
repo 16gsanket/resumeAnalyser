@@ -11,7 +11,7 @@ import userResumeModels from '../models/userResume.models.js';
 import checkResumeValid from '../utils/checkResumeValid.js';
 
 const uploadToServer = asyncHandler(async (req, res) => {
-
+  console.log('inside upload funtion..')
   try {
     if (!req.file) {
       return res

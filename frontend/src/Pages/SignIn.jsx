@@ -40,7 +40,7 @@ function SignIn() {
     const password = formData.get("password");
     console.log(email,password);
 
-    const response  = await fetch('http://localhost:8000/api/v1/auth/login-user',{
+    const response  = await fetch(`${import.meta.env.VITE_SERVER_URL}/api/v1/auth/login-user`,{
       method:'POST',
       headers:{
         'Content-Type':'application/json'
@@ -123,7 +123,7 @@ function SignIn() {
         </p>
 
         <a
-          href="http://localhost:8000/api/v1/auth/google"
+          href={`${import.meta.env.VITE_SERVER_URL}/api/v1/auth/google`}
           className="flex items-center justify-center mt-4 text-gray-600 transition-colors duration-300 transform border rounded-lg dark:border-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600"
         >
           <div className="px-4 py-2">

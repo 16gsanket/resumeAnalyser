@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
-import UploadUi from "../Ui/UploadUi";
-import ThreePoints from "../Ui/ThreePoints";
 import ChatBotComponent from "../Components/ChatBotComponent";
-import Loader from "../Components/Spiner";
-import Spinner from "../Components/Spiner";
+import ThreePoints from "../Ui/ThreePoints";
+import UploadUi from "../Ui/UploadUi";
 
 function HomePage() {
   const [textExtractedBoolean, setTextExtractedBoolean] = useState(false);

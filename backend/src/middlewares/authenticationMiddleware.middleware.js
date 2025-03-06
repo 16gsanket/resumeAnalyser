@@ -6,6 +6,7 @@ import logger from "../utils/logger.js";
 const authenticateUserCheck = asyncHandler(async(req, res, next) => {
  
   passport.authenticate("jwt", { session: false }, (err, user, info) => {
+   
     if (err) {
       logger.error("Error during authentication:", err);
       return res.status(500).json({ message: "Internal server error" });
