@@ -2,6 +2,17 @@ import React from "react";
 
 function ThreePoints({ analysedData }) {
 
+  if(!analysedData.career_navigation_advice){
+    return (
+      <div className="p-6 rounded-lg shadow-md max-w-4xl mx-auto">
+        <h2 className="text-[50px] font-bold mb-6 text-center pb-10">
+          There was an error Loading your Resume 😔, please try Again Later😁
+        </h2>
+
+        </div>
+    )
+  }
+
     const {networking , strategy, mentorship , skillDevelopment } = analysedData.career_navigation_advice;
   return (
     <div className="p-6  rounded-lg shadow-md max-w-4xl mx-auto">

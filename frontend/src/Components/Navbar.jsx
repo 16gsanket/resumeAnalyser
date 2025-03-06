@@ -13,6 +13,9 @@ function Navbar() {
 
     async function handleLogout(){
       const token = localStorage.getItem("token");
+      localStorage.removeItem('token')
+      dispatch(logout())
+      navigate('/')
       const response = await fetch('http://localhost:8000/api/v1/auth/logout-user',{
         method:'POST',
         headers:{
@@ -21,9 +24,6 @@ function Navbar() {
         },
       })
 
-        localStorage.removeItem('token')
-        dispatch(logout())
-        navigate('/')
     }
 
   return (

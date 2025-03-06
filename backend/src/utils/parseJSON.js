@@ -8,8 +8,6 @@ function parseJSON(jsonString) {
       .replace(/```/g, "") // Remove any triple backticks
       .replace('json', ""); // Remove any triple backticks
 
-      console.log(cleanedString);
-
     // Step 2: Parse the cleaned string into a JavaScript object
     const jsonObject = JSON.parse(cleanedString);
 
