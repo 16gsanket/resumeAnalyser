@@ -25,7 +25,7 @@ authRoute.get(
       // Redirect to your frontend with the token as a query parameter (or send as JSON)
     //   res.redirect(`https://your-frontend-domain.com/dashboard?token=${token}`);
       // return res.status(200).json(new apiResponse(200, 'Login successful', { token, user: { id: req.user._id, email: req.user.email } }));
-      res.redirect(`http://localhost:5173/?token=${token}&email=${email}&userId=${userId}`);
+      res.redirect(`${process.env.CLIENT_URL}/?token=${token}&email=${email}&userId=${userId}`);
     }
   );
   
