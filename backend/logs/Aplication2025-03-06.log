@@ -30,3 +30,8 @@
 {"level":"info","message":"Database connected","timestamp":"2025-03-06T05:23:51.661Z"}
 {"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-06T05:30:01.421Z"}
 {"level":"info","message":"Database connected","timestamp":"2025-03-06T05:30:01.718Z"}
+{"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-06T05:34:43.194Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-03-06T05:34:43.493Z"}
+{"level":"info","message":"user success authenticated 67c6d90a6383e75104b47473","timestamp":"2025-03-06T05:35:33.775Z"}
+{"level":"info","message":"Server is running on port 8000","timestamp":"2025-03-06T05:37:17.897Z"}
+{"level":"info","message":"Database connected","timestamp":"2025-03-06T05:37:18.150Z"}
